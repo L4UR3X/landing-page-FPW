@@ -235,6 +235,24 @@ button:hover {
 	background-color: var(--cor-primaria-hover);
 }
 
+/* ESTILIZAÇÃO DAS TAGS DE CURSOS */
+.tags-curso {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tags-curso .tag {
+    background-color: rgba(0, 158, 145, 0.1); 
+    color: var(--cor-primaria-hover);
+    border: 1px solid var(--cor-primaria);
+    padding: 4px 12px;
+    border-radius: 20px; /* Deixa com formato de "pílula" */
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
 /* RODAPÉ */
 footer {
 	text-align: center;
@@ -252,4 +270,58 @@ footer a {
 footer a:hover {
 	text-decoration: underline;
 	color: var(--cor-primaria-hover);
+}
+
+/* TEMA ESCURO (DARK MODE) */
+
+body.tema-escuro {
+    --cor-fundo: #121212;
+    --cor-texto: #e0e0e0;
+    --cor-branca: #1e1e1e;
+    --cor-cinza: #aaaaaa;
+
+}
+
+/* Estilo básico do botão de tema */
+.btn-tema {
+    background: none;
+    border: 1px solid var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* MENU MOBILE (RESPONSIVIDADE) */
+.btn-mobile {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .btn-mobile {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-branca);
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Classe ativada pelo JavaScript */
+    nav ul.mostrar-menu {
+        display: flex;
+    }
 }
