@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ana Medeiros | Portfólio</title>
+
+		<!-- Arquivo de estilos -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- CABEÇALHO -->
+		<header>
+			<h1>Ana Medeiros</h1>
+			<!-- Menu de navegação por âncoras -->
+			<nav>
+				<ul>
+					<li><a href="#sobre">Sobre mim</a></li>
+					<li><a href="#formacao">Formação</a></li>
+					<li><a href="#portfolio">Portfólio</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<!-- SOBRE MIM -->
+			<section id="sobre">
+				<h2>Sobre mim</h2>
+
+				<!-- Foto (opcional) -->
+				<img src="assets/foto.png" alt="Foto de perfil de Ana Medeiros" />
+				<p>
+					🎓 Mestre em História e em transição para a área de Tecnologia.
+					Atualmente sou Analista de Suporte N1 e estudante de Análise e
+					Desenvolvimento de Sistemas (ADS), construindo minha carreira com foco
+					em desenvolvimento backend e qualidade de software.
+				</p>
+				<p>
+					💡 Atualmente estou: Participando da mentoria Ser Mulher em Tech,
+					estudando Java e Spring Boot, aprendendo Testes Automatizados e
+					desenvolvendo projetos para fortalecer minha experiência prática.
+				</p>
+
+				<p><strong>Tecnologias em estudo:</strong></p>
+				<ul>
+					<li>Java</li>
+					<li>Spring Boot</li>
+					<li>SQL</li>
+					<li>Cypress</li>
+					<li>Postman</li>
+				</ul>
+
+				<h3>Hobbies</h3>
+				<ul>
+					<li>Ciclismo</li>
+					<li>Leitura</li>
+					<li>Gastronomia</li>
+				</ul>
+			</section>
+
+			<!-- FORMAÇÃO -->
+
+			<section id="formacao">
+				<h2>Formação</h2>
+
+				<h3>Formação Acadêmica</h3>
+
+				<div class="curso-ads">
+					<h4>Tecnólogo em Análise e Desenvolvimento de Sistemas (ADS)</h4>
+					<p class="instituicao">Uninter — Remoto</p>
+					<span class="periodo">Jul 2025 - Atualmente</span>
+				</div>
+
+				<!-- Segundo Curso -->
+				<div class="curso-historia">
+					<h4>Mestrado em História Social</h4>
+					<p class="instituicao">
+						Universidade Federal da Paraíba (UFPB) — João Pessoa, Paraíba
+					</p>
+					<span class="periodo">Mar 2023 - Ago 2025</span>
+				</div>
+
+				<h3>Cursos</h3>
+
+				<div class="curso-item">
+					<h3>Curso Completo de Java e Orientação a Objetos (OO)</h3>
+					<p class="plataforma-instrutor">
+						Plataforma: Udemy — Instrutor: Prof. Nélio Alves
+					</p>
+
+					<div class="tags-curso">
+						<ul class="tag">
+							Java
+						</ul>
+						<ul class="tag">
+							OOP
+						</ul>
+						<ul class="tag">
+							SpringBoot
+						</ul>
+					</div>
+				</div>
+
+				<h3>Idiomas</h3>
+
+				<ul>
+					<li>Português (Nativo)</li>
+					<li>Inglês (Avançado/C1)</li>
+				</ul>
+			</section>
+
+			<!-- PORTFÓLIO -->
+
+			<section id="portfolio">
+				<h2>Portfólio</h2>
+
+				<article>
+					<h3>Cofrinho em Java</h3>
+					<p>
+						Projeto em Java que simula um cofrinho de moedas via console. <br />
+						Permite adicionar, remover, listar moedas e calcular o valor total
+						convertido para Real.
+					</p>
+					<a
+						href="https://github.com/L4UR3X/Cofrinho-em-Java"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Ver projeto
+					</a>
+				</article>
+
+				<article>
+					<h3>Projeto Discover</h3>
+					<p>
+						Programa exclusivo e gratuito, promovido pela Rocketseat para ensino
+						de tecnologias WEB.
+					</p>
+					<a
+						href="https://github.com/L4UR3X/Projeto-Discover"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Ver projeto
+					</a>
+				</article>
+
+				<article>
+					<h3>Calculadora Simples em JS</h3>
+					<p>
+						Projeto de calculadora simples em JavaScript, HTML e CSS que realiza
+						operações básicas (adição, subtração, multiplicação e divisão)
+						diretamente no navegador.
+					</p>
+					<a
+						href="https://github.com/L4UR3X/Calculadora-Simples"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Ver projeto
+					</a>
+				</article>
+			</section>
+
+			<!-- CONTATO -->
+
+			<section id="contato">
+				<h2>Contato</h2>
+
+				<!-- O JavaScript fará a validação e a simulação do envio -->
+				<form id="formContato">
+					<div>
+						<label for="nome">Nome</label>
+
+						<input
+							type="text"
+							id="nome"
+							name="nome"
+							placeholder="Digite seu nome"
+						/>
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Digite seu e-mail"
+						/>
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+
+						<textarea
+							id="mensagem"
+							name="mensagem"
+							rows="6"
+							placeholder="Digite sua mensagem"
+						></textarea>
+					</div>
+
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
+		</main>
+
+		<!-- RODAPÉ -->
+
+		<footer>
+			<p>© 2026 - Ana Medeiros</p>
+			<p>
+				<a
+					href="https://github.com/L4UR3X"
+					target="_blank"
+					rel="noopener noreferrer"
+					>GitHub</a
+				>
+				•
+				<a
+					href="https://www.linkedin.com/in/ana-laura-medeiros/?skipRedirect=true"
+					target="_blank"
+					rel="noopener noreferrer"
+					>LinkedIn</a
+				>
+			</p>
+		</footer>
+
+		<!-- Arquivo JavaScript -->
+		<script src="script.js"></script>
+	</body>
+</html>
