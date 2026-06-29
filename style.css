@@ -1,0 +1,255 @@
+/* RESET BÁSICO E VARIÁVEIS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--cor-fundo: #f4f4f9;
+	--cor-texto: #333333;
+	--cor-primaria: #009e91;
+	--cor-primaria-hover: #01736a;
+	--cor-branca: #ffffff;
+	--cor-cinza: #666666;
+	--fonte-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	font-family: var(--fonte-principal);
+	background-color: var(--cor-fundo);
+	color: var(--cor-texto);
+	line-height: 1.6;
+}
+
+/* 2. CABEÇALHO E NAVEGAÇÃO */
+header {
+	background-color: var(--cor-branca);
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+header h1 {
+	font-size: 1.8rem;
+	color: var(--cor-primaria);
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--cor-texto);
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+nav a:hover {
+	color: var(--cor-primaria-hover);
+}
+
+/* ESTRUTURA PRINCIPAL (MAIN E SEÇÕES) */
+main {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+section {
+	background-color: var(--cor-branca);
+	padding: 30px;
+	margin-bottom: 40px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	border-bottom: 2px solid var(--cor-primaria);
+	padding-bottom: 10px;
+}
+
+section h3 {
+	margin: 20px 0 10px 0;
+	color: var(--cor-primaria);
+}
+
+/* SOBRE MIM E LISTAS */
+/* ESTRUTURA LADO A LADO (FOTO E TEXTO) */
+.sobre-conteudo {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 20px;
+}
+
+.foto-perfil {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 0;
+	flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+	.sobre-conteudo {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+/* ESTILIZAÇÃO DAS BADGES DE TECNOLOGIA */
+.badges-tecnologias {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.badges-tecnologias img {
+	border-radius: 4px;
+	transition: transform 0.3s ease;
+}
+
+.badges-tecnologias img:hover {
+	transform: translateY(-3px);
+}
+
+ul {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+ul li {
+	margin-bottom: 5px;
+}
+
+.redes-sociais {
+	margin-top: 20px;
+}
+
+.redes-sociais a {
+	text-decoration: none;
+	color: var(--cor-branca);
+	background-color: var(--cor-primaria);
+	padding: 8px 12px;
+	border-radius: 4px;
+	margin-right: 10px;
+	font-size: 0.9rem;
+	transition: background-color 0.3s;
+}
+
+.redes-sociais a:hover {
+	background-color: var(--cor-primaria-hover);
+}
+
+/* PORTFÓLIO E FORMAÇÃO */
+article,
+.curso-item,
+.curso-ads,
+.curso-historia {
+	background-color: var(--cor-fundo);
+	padding: 20px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+article a {
+	display: inline-block;
+	margin-top: 10px;
+	text-decoration: none;
+	color: var(--cor-primaria);
+	font-weight: bold;
+}
+
+article a:hover {
+	text-decoration: underline;
+}
+
+.periodo,
+.instituicao {
+	display: block;
+	color: var(--cor-cinza);
+	font-size: 0.9rem;
+}
+
+/* FORMULÁRIO DE CONTATO */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+form div {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+input,
+textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: var(--cor-primaria);
+	box-shadow: 0 0 5px rgba(0, 158, 145, 0.3);
+}
+
+button {
+	background-color: var(--cor-primaria);
+	color: var(--cor-branca);
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: var(--cor-primaria-hover);
+}
+
+/* RODAPÉ */
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--cor-texto);
+	color: var(--cor-branca);
+	margin-top: 40px;
+}
+
+footer a {
+	color: var(--cor-primaria);
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: var(--cor-primaria-hover);
+}
